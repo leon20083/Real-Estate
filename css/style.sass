@@ -1,0 +1,535 @@
+body
+    width: 1440px
+    font-family: 'Poppins'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    background: #F5F5F5
+    color: #73788C
+
+.container
+    width: 1192px
+    margin: 0 132px
+    position: relative
+h1, h2, h3, h4, h5
+    font-family: 'Rubik'
+    font-style: normal
+    font-weight: 600
+*
+    padding: 0
+    margin: 0
+img
+    width: 100%
+a
+    text-decoration: none
+.button
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: 0.0025em
+    color: #FFFFFF
+    padding: 15px 48px
+    background: #69B99D
+    border: none
+.title
+    font-weight: 500
+    font-size: 18px
+    line-height: 26px
+    letter-spacing: 0.5px
+    color: #69B99D
+    background: #F8F9FE
+    padding: 12px 24px
+    position: absolute
+    top: 0
+    left: 0
+.logo
+    width: 10%
+    img
+        width: 115px
+        height: 40px
+.on
+    display: flex
+.off
+    display: none !important
+.header
+    margin-top: 30px
+    margin-bottom: 65px
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .menu
+        width: 60%
+        display: flex
+        justify-content: center
+        ul
+            display: flex
+            justify-content: space-around
+            li
+                list-style: none
+                position: relative
+                &:hover
+                    a
+                        color: #69B99D
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: center
+                        transform: translateY(-10px)
+                        transition: all .3s ease
+                        .dot
+                            opacity: 1
+                            transform: translateY(30px)
+                            transition: all .3s ease
+                &.active
+                    @extend :hover
+                a
+                    text-decoration: none
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 26px
+                    letter-spacing: 0.5px
+                    color: #8E8E8E
+                    .dot
+                        position: absolute
+                        opacity: 0
+                        color: #69B99D
+                        font-size: 26px
+                &:not(:last-child)
+                    margin-right: 48px
+    .authorization
+        display: flex
+        width: 30%
+        a
+            text-decoration: none
+        .registration
+            background: transparent
+            color: #69B99D
+// секция real__estate
+.real__estate
+    position: relative
+    img
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 806px
+        height: 761px
+    .text
+        padding-top: 95px
+        h1
+            font-size: 64px
+            line-height: 74px
+            letter-spacing: 0.0025em
+            color: #1F2744
+            width: 50%
+            padding-bottom: 25px
+        p
+            line-height: 24px
+            width: 45%
+            padding-bottom: 65px
+    .search
+        padding-bottom: 110px
+        .items
+            display: flex
+            font-weight: 500
+            font-size: 24px
+            line-height: 32px
+            letter-spacing: 0.0025em
+        .title__item
+            padding: 12px 32px
+            a
+                text-decoration: none
+                color: #A6A6A6
+            &.active
+                background: #fff
+        .item__wrap
+            display: flex
+            justify-content: space-between
+            width: 55%
+            padding: 32px
+            background: #fff
+            box-shadow: 35px 35px 65px rgba(146, 106, 120, 0.16)
+            a
+                text-decoration: none
+                box-shadow: 0px 0px 65px rgba(105, 185, 157, 0.32)
+            .item
+                p
+                    padding-left: 4px
+                    color: #1F2744
+                    font-size: 18px
+                    line-height: 26px
+                    letter-spacing: 0.0025em
+                    margin-bottom: 8px
+                form
+                    border: none
+                    select
+                        font-size: 18px
+                        line-height: 26px
+                        letter-spacing: 0.0025em
+                        color: #A6A6A6
+                        border: 0
+                        outline: 0
+                        padding: 0
+            &:not(:last-child)
+                margin-right: 40px
+                &:not(:last-child)
+                    margin-right: 40px
+// секция discover
+.discover
+    padding: 120px 0
+    background: #fff
+    .title__discover
+        padding-top: 65px
+        h2
+            font-size: 48px
+            line-height: 56px
+            letter-spacing: 0.5px
+            color: #054457
+            padding-bottom: 16px
+        .desc
+            margin-bottom: 50px
+            display: flex
+            justify-content: space-between
+            p
+                width: 40%
+            a
+                background: transparent
+                font-size: 18px
+                line-height: 26px
+                letter-spacing: 0.5px
+                color: #69B99D
+                img
+                    width: 24px
+                    height: 24px
+                    padding-left: 8px
+    .items
+        display: flex
+        justify-content: space-between
+        .item
+            width: 30%
+            padding: 16px
+            border: 1px solid #DEDCDA
+            h4
+                font-weight: 600
+                font-size: 24px
+                line-height: 32px
+                letter-spacing: 0.0025em
+                color: #1F2744
+                padding-bottom: 8px
+            p
+                padding-bottom: 16px
+                color: #A6A6A6
+            .item__desc
+                display: flex
+                justify-content: space-between
+                .price
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 32px
+                    letter-spacing: 0.0025em
+                    color: #69B99D
+                .square
+                    span
+                        color: #1F2744
+                        font-size: 18px
+                        padding-bottom: 24px
+            a
+                border: 1px solid #69B99D
+                background: transparent
+                color: #69B99D
+                &:hover
+                    background: #69B99D
+                    box-shadow: 0px 0px 20px rgba(105, 185, 157, 0.58)
+                    color: #fff
+                    transition: all .5s ease
+// секция our__advante                  
+.our__advante
+    padding-bottom: 100px
+    .title
+        margin-top: 80px
+    .our__advante-title
+        h2
+            font-size: 48px
+            line-height: 56px
+            letter-spacing: 0.5px
+            color: #054457
+            width: 30%
+            padding-top: 145px
+            padding-bottom: 60px
+        .items
+            display: flex
+            flex-wrap: wrap
+            .item
+                padding: 20px
+                width: 29%
+                h4
+                    font-weight: 700
+                    font-size: 28px
+                    line-height: 38px
+                    letter-spacing: 0.5px
+                    color: #054457
+                    padding-bottom: 16px
+                p
+                    letter-spacing: 0.5px
+                    color: #73788C
+                img
+                    width: 54px
+                    height: 54px
+                    padding-bottom: 16px
+// секция about__us
+.about__us
+    background: #fff
+    padding-top: 215px
+    padding-bottom: 100px
+    .container
+        display: flex
+    .about__us-left
+        background: url(../img/about.png) no-repeat
+        text-align: center
+        min-width: 50%
+        position: relative
+        .success
+            display: flex
+            justify-content: space-between
+            background: #fff
+            position: absolute
+            right: 0
+            bottom: 0
+            padding: 12px 32px
+            p
+                width: 22%
+                text-align: left
+            span
+                font-size: 48px
+                line-height: 58px
+                letter-spacing: 0.0025em
+                color: #054457
+        .rating
+            position: absolute
+            width: 30%
+            left: 95px
+            top: -100px
+            background: #FEFEFF
+            box-shadow: 35px 35px 65px rgba(146, 106, 120, 0.16)
+            padding: 32px
+            p
+                letter-spacing: 0.0025em
+                color: #A6A6A6
+                span
+                    font-size: 72px
+                    line-height: 80px
+                    letter-spacing: 0.0025em
+                    color: #054457
+            .star__wrap
+                img
+                    width: 18px
+                    height: 18px
+            img
+                width: 32px
+                height: 32px
+                padding-bottom: 16px
+            .rating__text
+                .action
+                    letter-spacing: 0.0025em
+                    color: #054457
+    .about__us-right
+        position: relative
+        width: 50%
+        padding: 50px 0 50px 50px
+        .title
+            left: 50px
+        h2
+            font-size: 48px
+            line-height: 56px
+            letter-spacing: 0.5px
+            color: #054457
+            margin-top: 42px
+            margin-bottom: 16px
+        p
+            margin-bottom: 50px
+            letter-spacing: 0.0025em
+        .button
+            box-shadow: 24px 24px 65px rgba(81, 140, 119, 0.24)
+            width: 185px
+//testimonial
+.testimonial
+    background: #fff
+    padding-bottom: 120px
+    .desc
+        display: flex
+        justify-content: space-between
+        
+        height: 50px
+        padding-top: 60px
+        margin-bottom: 50px
+        h2
+            font-size: 48px
+            line-height: 56px
+            letter-spacing: 0.5px
+            color: #054457
+        .button
+            width: 185px
+            background: transparent
+            font-size: 18px
+            line-height: 26px
+            letter-spacing: 0.5px
+            color: #69B99D
+            filter: drop-shadow(0px 0px 20px rgba(105, 185, 157, 0.58))
+            img
+                width: 24px
+                height: 24px
+                padding-left: 8px
+    .testimonial__items
+        display: flex
+        justify-content: space-between
+        .testimonial__item
+            background: #FEFEFF
+            border: 1px solid #DEDCDA
+            width: 28%
+            padding: 24px 0 24px 24px
+            img
+                width: 42px
+                height: 34px
+                margin-bottom: 24px
+            h4
+                font-size: 18px
+                line-height: 28px
+                letter-spacing: 0.0025em
+                color: #1F2744
+                padding-bottom: 16px
+                width: 90%
+            p
+                line-height: 24px
+                letter-spacing: 0.0025em
+                color: #1F2744
+                padding-bottom: 24px
+                padding-right: 10px
+            .peopel
+                display: flex
+                .img__wrap
+                    border-radius: 10em
+                    margin-right: 14px
+                    img
+                        width: 48px
+                        height: 48px
+                .text
+                    .name
+                        font-weight: 600
+                        letter-spacing: 0.5px
+                        color: #0B2E29
+                    .proff
+                        font-size: 12px
+                        line-height: 22px
+                        letter-spacing: 0.5px
+                        color: #767676
+                        padding-left: 3px
+//footer
+.footer
+    padding: 75px 0 100px 0
+    display: flex
+    .container
+        display: flex
+        .left
+            width: 40%
+            .logo
+                padding-bottom: 16px
+            p
+                padding-bottom: 24px
+                width: 75%
+            label
+                font-weight: 500
+                font-size: 20px
+                line-height: 28px
+                text-align: center
+                color: #0B2E29
+            .form
+                display: flex
+                margin-top: 16px
+                input
+                    width: 250px
+                    border: none
+                    outline: none
+                    &::placeholder
+                        padding: 8px 16px
+                .button
+                    padding: 8px 24px
+                    cursor: pointer
+        .right
+            display: flex
+            justify-content: space-between
+            width: 60%
+            ul
+                li
+                    list-style: none
+                    padding-bottom: 16px
+                    a
+                        color: #575757 
+                    &.li-title
+                        font-weight: 500
+                        font-size: 20px
+                        line-height: 28px
+                        text-align: center
+                        color: #0B2E29  
+                        text-align: left
+            p
+                font-weight: 500
+                font-size: 20px
+                line-height: 28px
+                text-align: center
+                color: #0B2E29
+            .social
+                .soc__wrap
+                    display: flex
+                    justify-content: space-around
+                    img
+                        margin-top: 16px
+                        width: 40px
+                        height: 40px
+.modal__container
+    text-align: center
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 1
+    &.active
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #fffff73
+    .modal
+        border-radius: 20px
+        padding: 20px
+        min-width: 500px
+        min-height: 500px
+        max-width: 500px
+        max-height: 500px
+        width: 100%
+        height: 100%
+        background: #fff
+        box-shadow: 0 0 50px 10px black
+        h2
+            margin: 30px 0
+        form
+            display: flex
+            flex-direction: column
+            input
+                width: 70%
+                height: 30px
+                margin: 0 auto
+                margin-bottom: 20px
+                &::placeholder
+                    padding-left: 10px
+                &[type=submit]
+                    font-weight: 700
+                    font-size: 18px
+                    height: 50px
+.modal__container-reg
+    @extend .modal__container
+    
+        
