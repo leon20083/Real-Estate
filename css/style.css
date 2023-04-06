@@ -331,6 +331,11 @@ a {
 .our__advante .our__advante-title .items .item {
   padding: 20px;
   width: 29%;
+  cursor: pointer;
+}
+.our__advante .our__advante-title .items .item:hover svg path, .our__advante .our__advante-title .items .header .menu ul li.item.active svg path, .header .menu ul .our__advante .our__advante-title .items li.item.active svg path {
+  fill: #0df92c !important;
+  stroke: #69B99D;
 }
 .our__advante .our__advante-title .items .item h4 {
   font-weight: 700;
